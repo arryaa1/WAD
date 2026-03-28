@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards UI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        nav {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Card Grid */
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>My Website</h2>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align:center;">Our Cards</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150" alt="image">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is a simple card with some text.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150" alt="image">
+                <div class="card-content">
+                    <h3>Card 2</h3>
+                    <p>This is another card with cool hover effect.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150" alt="image">
+                <div class="card-content">
+                    <h3>Card 3</h3>
+                    <p>You can add as many cards as you want.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
